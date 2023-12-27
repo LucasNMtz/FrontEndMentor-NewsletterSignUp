@@ -10,7 +10,7 @@ const dismissButton = document.getElementById("dismiss-btn");
 form.addEventListener("submit", (e) =>
 {
     e.preventDefault();
-    const email = emailInput.value;
+    const email = emailInput.value.trim();
 
     if (!isValidEmail(email)) 
     {
